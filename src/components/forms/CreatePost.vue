@@ -54,6 +54,7 @@ export default {
       )
 
       if(!data.fail) {
+        this.$store.dispatch(types.ACTIONS.SORT, 'timestamp')
         this.$store.dispatch(types.ACTIONS.GET_DATA)
         this.$store.dispatch(types.ACTIONS.CLOSE_MODAL)
 
